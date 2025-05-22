@@ -1,0 +1,121 @@
+# ─── Python build & cache ──────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyi
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+dist-lite/
+*.egg-info/
+.eggs/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtualenvs
+env/
+venv/
+ENV/
+.venv/
+
+# pyenv
+.python-version
+
+# macOS
+.DS_Store
+
+# dotenv
+.env
+.env.*
+
+# Logs
+*.log
+
+# mypy, Pyre caches
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# Spyder, Rope
+.spyderproject
+.spyproject
+.ropeproject
+
+# mkdocs
+/site
+
+# ─── Gradio run artifacts & demos ──────────────────────────────────────────────
+# (to ignore database files & session state)
+*.db
+*.sqlite3
+gradio/launches.json
+gradio/hash_seed.txt
+.gradio/
+tmp.zip
+
+# Demos & temp archives
+demo/tmp.zip
+demo/files/*.avi
+demo/files/*.mp4
+demo/all_demos/demos/*
+demo/all_demos/requirements.txt
+demo/*/config.json
+demo/annotatedimage_component/*.png
+demo/fake_diffusion_with_gif/*.gif
+demo/cancel_events/cancel_events_output_log.txt
+demo/unload_event_test/output_log.txt
+demo/stream_video_out/output_*.ts
+demo/stream_video_out/output_*.mp4
+demo/stream_audio_out/*.mp3
+
+# JS build (if you vendor front-end)
+js/gradio-preview/test/*
+gradio/templates/*
+gradio/node/*
+gradio/_frontend_code/*
+js/gradio-preview/test/*
+
+# Dev containers, storybook, playwright, etc.
+.pnpm-store/
+.pnpm-debug.log
+node_modules/
+public/build/
+storybook-static/
+.config/playwright/.cache
+
+# ─── PyCharm / IntelliJ IDEA ───────────────────────────────────────────────────
+# JetBrains IDE project files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Optional: ignore workspace and run configs if you want
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/dictionaries/
+.idea/**/vcs.xml
+.idea/**/runConfigurations.xml
